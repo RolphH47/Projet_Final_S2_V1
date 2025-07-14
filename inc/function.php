@@ -35,10 +35,10 @@ function login($email, $mdp) {
 }
 
 // Inscription : ajout d'un membre
-function inscrire($nom, $email, $mdp, $ville) {
+function inscrire($nom, $email, $date_naissance ,$mdp, $ville) {
     $pdo = getPDO();
-    $stmt = $pdo->prepare("INSERT INTO membre (nom, email, mdp, ville) VALUES (?, ?, ?, ?)");
-    return $stmt->execute([$nom, $email, $mdp, $ville]);
+    $stmt = $pdo->prepare("INSERT INTO membre (nom, email, date_naissance, mdp, ville) VALUES (?, ?, ?, ?)");
+    return $stmt->execute([$nom, $email, $date_naissance ,$mdp, $ville]);
 }
 function getEmpruntsByMembre($id_membre) {
     $pdo = getPDO();

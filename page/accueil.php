@@ -12,7 +12,7 @@ session_start();
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-        <a class="navbar-brand" href="index.php">Accueil</a>
+        <a class="navbar-brand" href="../index.php">Accueil</a>
         <div class="collapse navbar-collapse">
             <ul class="navbar-nav ms-auto">
                 <?php if (isset($_SESSION['membre'])) : ?>
@@ -51,7 +51,7 @@ session_start();
         <?php if (isset($_SESSION['membre'])) : ?>
             <a href="liste_objets.php" class="btn btn-primary btn-lg">Voir les objets disponibles</a>
         <?php else : ?>
-            <a href="login.php" class="btn btn-primary btn-lg">Se connecter</a>
+            <a href="../index.php" class="btn btn-primary btn-lg">Se connecter</a>
             <a href="inscription.php" class="btn btn-success btn-lg">Créer un compte</a>
         <?php endif; ?>
     </div>

@@ -2,7 +2,7 @@
 │
 ├── inc/
 │   ├── connexion.php
-│   └── fonctions.php
+│   └── functions.php
 │
 ├── assets/
 │   └── css/bootstrap.min.css
@@ -12,3 +12,4 @@
 ├── liste_objets.php (affichage objets)
 ├── emprunts.php (liste des emprunts)
 └── accueil.php
+└── mes_emprunts.php

@@ -26,7 +26,7 @@
     <?php foreach (getObjets($_GET['categorie'] ?? null) as $obj) : ?>
         <div class="col-md-4 mb-3">
             <div class="card">
-                <img src="images/<?= htmlspecialchars($obj['nom_image']) ?>" class="card-img-top" alt="Image Objet">
+                <img src="../assets/image/<?= htmlspecialchars($obj['nom_image']) ?>" class="card-img-top" alt="Image Objet">
                 <div class="card-body">
                     <h5 class="card-title"> <?= htmlspecialchars($obj['nom_objet']) ?> </h5>
                     <p class="card-text">Catégorie : <?= htmlspecialchars($obj['nom_categorie']) ?></p>
