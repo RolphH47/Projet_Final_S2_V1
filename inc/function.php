@@ -37,7 +37,7 @@ function login($email, $mdp) {
 // Inscription : ajout d'un membre
 function inscrire($nom, $email, $date_naissance ,$mdp, $ville) {
     $pdo = getPDO();
-    $stmt = $pdo->prepare("INSERT INTO membre (nom, email, date_naissance, mdp, ville) VALUES (?, ?, ?, ?)");
+    $stmt = $pdo->prepare("INSERT INTO membre (nom, email, date_naissance, mdp, ville) VALUES (?, ?, ?, ?, ?)");
     return $stmt->execute([$nom, $email, $date_naissance ,$mdp, $ville]);
 }
 function getEmpruntsByMembre($id_membre) {

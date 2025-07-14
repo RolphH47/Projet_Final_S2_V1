@@ -13,7 +13,7 @@
     <div class="container mt-5">
         <h2>Inscription</h2>
         <?php if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-            if (inscrire($_POST['nom'], $_POST['email'], $_POST['date_naisasnce'],$_POST['mdp'], $_POST['ville'])) {
+            if (inscrire($_POST['nom'], $_POST['email'], $_POST['date_naissance'],$_POST['mdp'], $_POST['ville'])) {
                 echo '<div class="alert alert-success">Inscription réussie</div>';
             }
         } ?>
@@ -28,7 +28,7 @@
             </div>
             <div class="mb-3">
                 <label>Date de naissance</label>
-                <input type="email" name="date_naissance" class="form-control" required>
+                <input type="date" name="date_naissance" class="form-control" required>
             </div>
             <div class="mb-3">
                 <label>Mot de passe</label>
