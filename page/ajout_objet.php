@@ -39,6 +39,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </head>
 <body>
 <div class="container mt-4">
+<?php include('navbar.php'); ?>
     <h2>Ajouter un nouvel objet</h2>
     <form method="post" enctype="multipart/form-data">
         <div class="mb-3">

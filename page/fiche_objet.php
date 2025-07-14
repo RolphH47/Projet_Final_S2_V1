@@ -16,7 +16,8 @@ $historique = getHistoriqueEmprunts($id_objet);
 </head>
 <body>
 
-<div class="container mt-4">
+<div class="container md-12">
+<?php include('navbar.php'); ?>
     <div class="row">
         <div class="col-md-6">
             <h2><?= htmlspecialchars($objet['nom_objet']) ?></h2>
