@@ -3,7 +3,7 @@ session_start();
 require '../inc/function.php';
 
 if (!isset($_SESSION['membre'])) {
-    header('Location: ../login.php');
+    header('Location: ../index.php');
     exit;
 }
 

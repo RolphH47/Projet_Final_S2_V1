@@ -1,15 +1,39 @@
-/final-project/v1/
-│
-├── inc/
-│   ├── connexion.php
-│   └── functions.php
-│
-├── assets/
-│   └── css/bootstrap.min.css
-│
-├── index.php (page d'accueil)
-├── emprunter.php (formulaire emprunt)
-├── liste_objets.php (affichage objets)
-├── emprunts.php (liste des emprunts)
-└── accueil.php
-└── mes_emprunts.php
+/final-project/v1/v2/v3
+ inc/
+├── connexion.php
+└── functions.php(
+        -login ok
+        -inscrire ok
+        -getcategories ok
+        -getobjets ok
+        -ajouterobjet ok
+        -ajouterimage non
+        -getficheobjet ok 
+        -getimagesobjet non 
+        -gethistoriqueemprunts ok 
+        -getemprunts ok 
+        -getempruntsByMembre ok
+        -getfichemembre ok 
+        -getobjetsparmembre ok 
+        -demanderemprunt ok 
+        -supprimerImage non 
+        -creeremprunt ok 
+        -getProprietaireobjet ok 
+)
+assets/
+│  └── css/bootstrap.min.css
+
+ index.php page_accueil
+ pages
+    emprunter.php (formulaire emprunt)
+    liste_objets.php (affichage objets)
+    emprunts.php (liste des emprunts)
+    accueil.php
+    mes_emprunts.php
+    demande_emprunt.php
+    fiche_membre.php
+    fiche_objet.php
+    inscription.php
+    logout.php
+    navbar.php 
+requete.sql
