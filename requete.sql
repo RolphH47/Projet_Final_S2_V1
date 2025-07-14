@@ -59,9 +59,9 @@ INSERT INTO objet (nom_objet, id_categorie, id_membre) VALUES
 ('Fer à lisser', 1, 4), ('Scie sauteuse', 2, 3);
 
 INSERT INTO images_objet (id_objet, nom_image) VALUES
-(1, 'seche.jpg'), (2, 'lime.jpg'), (3, 'perceuse.jpeg'), (4, 'tournevis.jpeg'),
-(5, 'cle.jpeg'), (6, 'pompe.jpg'), (7, 'batteur.jpg'), (8, 'mixeur.jpg'),
-(9, 'fer.jpg'), (10, 'scie.jpg');
+(1, 'seche.jpeg'), (2, 'lime.jpeg'), (3, 'perceuse.jpeg'), (4, 'tournevis.jpeg'),
+(5, 'cle.jpeg'), (6, 'pompe.jpeg'), (7, 'batteur.jpeg'), (8, 'mixeur.jpeg'),
+(9, 'fer.jpeg'), (10, 'scie.jpeg');
 
 INSERT INTO emprunt (id_objet, id_membre, date_emprunt, date_retour) VALUES
 (1, 2, '2025-07-01', '2025-07-05'),
