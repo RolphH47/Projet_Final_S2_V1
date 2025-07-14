@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Liste des Emprunts</title>
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>

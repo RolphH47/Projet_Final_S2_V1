@@ -6,7 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Inscription</title>
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -35,7 +35,8 @@
                 <input type="text" name="ville" class="form-control">
             </div>
             <button type="submit" class="btn btn-success">S'inscrire</button>
-        </form>
+        </form><br>
+        <button class="btn btn-danger"><a href="accueil.php">Accueil</a></button>
     </div>
 </body>
 

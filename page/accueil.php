@@ -6,7 +6,7 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <title>Accueil - Emprunt Objets</title>
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 
@@ -17,6 +17,9 @@ session_start();
             <ul class="navbar-nav ms-auto">
                 <?php if (isset($_SESSION['membre'])) : ?>
                     <li class="nav-item">
+                        <a class="nav-link text-warning">Bonjour <?= htmlspecialchars($_SESSION['membre']['nom']) ?></a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="liste_objets.php">Objets</a>
                     </li>
                     <li class="nav-item">
@@ -26,7 +29,7 @@ session_start();
                         <a class="nav-link" href="mes_emprunts.php">Mes emprunts</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-warning">Bonjour <?= htmlspecialchars($_SESSION['membre']['nom']) ?></a>
+                        <a class="nav-link" href="inscription.php">Inscription</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-danger" href="logout.php">Déconnexion</a>
@@ -34,9 +37,6 @@ session_start();
                 <?php else : ?>
                     <li class="nav-item">
                         <a class="nav-link" href="login.php">Connexion</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="inscription.php">Inscription</a>
                     </li>
                 <?php endif; ?>
             </ul>

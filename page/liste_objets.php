@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Liste des Objets</title>
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
