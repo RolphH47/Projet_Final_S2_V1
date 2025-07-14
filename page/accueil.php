@@ -10,7 +10,7 @@
 <body class="bg-light">
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-        <a class="navbar-brand" href="index.php">Emprunt Objets</a>
+        <a class="navbar-brand" href="../index.php">Emprunt Objets</a>
         <div class="collapse navbar-collapse">
             <ul class="navbar-nav ms-auto">
                 <?php if (!isset($_SESSION['membre'])): ?>

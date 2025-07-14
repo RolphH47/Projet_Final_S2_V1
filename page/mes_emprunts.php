@@ -1,8 +1,6 @@
 <?php
 session_start();
 include('../inc/function.php');
-
-// Vérifie si l'utilisateur est connecté
 if (!isset($_SESSION['membre'])) {
     header('Location: login.php');
     exit;
