@@ -1,0 +1,14 @@
+/final-project/v1/
+│
+├── inc/
+│   ├── connexion.php
+│   └── fonctions.php
+│
+├── assets/
+│   └── css/bootstrap.min.css
+│
+├── index.php (page d'accueil)
+├── emprunter.php (formulaire emprunt)
+├── liste_objets.php (affichage objets)
+├── emprunts.php (liste des emprunts)
+└── accueil.php
