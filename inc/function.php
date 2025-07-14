@@ -134,4 +134,17 @@ function supprimerImage($id_image) {
     $stmt = $pdo->prepare("DELETE FROM images_objet WHERE id_image=?");
     return $stmt->execute([$id_image]);
 }
+function creerEmprunt($id_objet, $id_membre, $date_debut, $date_fin) {
+    $pdo = dbconnect();
+    $stmt = $pdo->prepare("INSERT INTO emprunt (...) VALUES (?, ?, ?, ?, 'en_attente')");
+    return $stmt->execute([$id_objet, $id_membre, $date_debut, $date_fin]);
+}
+function getProprietaireObjet($id_objet) {
+    $pdo = dbconnect();
+    $stmt = $pdo->prepare("SELECT m.nom FROM objet o
+                          JOIN membre m ON o.id_membre = m.id_membre
+                          WHERE o.id_objet = ?");
+    $stmt->execute([$id_objet]);
+    return $stmt->fetch(PDO::FETCH_ASSOC);
+}
 ?>
